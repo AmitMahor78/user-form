@@ -1,12 +1,4 @@
 import { func } from "./script1.js";
-let Box = document.getElementById("Box");
-        let qrI = document.getElementById("qrI");
-        let qrText = document.getElementById("qrText");
-
-
-        function generateQR(){
-          qrI.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + qrText.value 
-        }
 
 const form = document.getElementById('login-form');
 const usernameInput = document.getElementById('username');
@@ -27,15 +19,16 @@ submitBtn.addEventListener('click', (e) => {
     }
 
 
-    if (username === 'amit_mahor_16' && password === '9244756609') {
+    if (username === 'amit_mahor_16' && password === '1') {
 
         errorMsgDiv.innerText = ''
         document.querySelector("body").style.backgroundColor = "black"
         document.querySelector('#login-form').style.display= "none"
         document.querySelector("section").style.display = "flex"
         document.querySelector(".container").style.display= "none"
-        document.querySelector("section").style.display = "flex"
+        document.querySelector("section").style.display = "flex";
 
+        
         
     } else {
         errorMsgDiv.innerText = 'Invalid username or password.';
